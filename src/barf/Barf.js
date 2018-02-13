@@ -19,8 +19,6 @@ class Barf extends Component {
     }
 }
 
-
-
 export default Barf
 
 //export it in this file, then import it into your index.js file and put the tag
