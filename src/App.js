@@ -13,12 +13,16 @@ import Button from 'react-bootstrap/lib/Button';
 //an elegant way of doing so with HTML. This is one of the benefits of React.
 
 class App extends Component {
+  constructor(){
+    super();
+    this.spaceDawgz = "Hello";
+
+  }
 
   render() {
-
     return (
       <div>
-        {this.spaceDawgz}
+      {this.spaceDawgz}
       </div>
     )  
   }
