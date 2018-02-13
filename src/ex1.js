@@ -27,12 +27,11 @@ class Ex1 extends Component {
       if (today.getMonth()==11 && today.getDate()>25) {
       cmas.setFullYear(cmas.getFullYear()+1) 
       }
-     
 
-    var one_day=1000*60*60*24;
+      var one_day=1000*60*60*24;
 
-    return (Math.ceil((cmas.getTime()-today.getTime())/(one_day)) + " days left until class is over!")
-    }
+      return (Math.ceil((cmas.getTime()-today.getTime())/(one_day)) + " days left until class is over!")
+      }
   }
 
   render() {
