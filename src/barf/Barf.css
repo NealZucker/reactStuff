@@ -10,3 +10,7 @@ on those classes in this file */
 p {
     background-color: blue
 }
+
+#root {
+    background-color: gray;
+  }

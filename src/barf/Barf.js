@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import "./Barf.css"
+
 
 //Create another react component the same way as you did before
 //This time, we're going to use this component WITHIN your other 
@@ -6,7 +8,6 @@ import React, { Component } from 'react';
 //attach one component to an html tag - that is the entry point of your react. 
 //ideally, you won't be doing anymore edits in html. Back to the component - Call it
 // "Barf"
-import "./Barf.css"
 
 class Barf extends Component {
     constructor() {

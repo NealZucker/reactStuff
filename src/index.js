@@ -5,6 +5,7 @@ import './index.css';
 import App from "./App.js"
 import Barf from "./barf/Barf.js"
 import Ex1 from "./ex1.js"
+import "./barf/Barf.css"
 //Lets build yer first react component! Woo hoo!!!!!
 //At it's essence a react 'component' is simply a
 //function that has a render method that returns the following:
@@ -23,20 +24,23 @@ class MyClass extends React.Component {
     constructor() {
         super();
         this.state = {dog: "Woof"};
-        //this.handleClick = this.handleClick.bind(this);
-    }
+    };
     render() {
-        return <div>Test Test Test
-            <Barf />
-            <App />
-            <Ex1 />
+        return (
+            <div>
+                <div>Test Test Test
+                    <Barf />
+                    <App />
+                    <Ex1 />
+                </div>
             </div>
-    }
-}
+        );
+    };
+};
 
 //we need to get this puppy working with the html. Below is a way to 
 //inject a component into html
-ReactDOM.render(< MyClass />, document.getElementById("root"));
+ReactDOM.render(<MyClass />, document.getElementById("root"));
 //step 4: insert your class name where it says "insert class here". Find the index.html file (in ../public)
 //and select an html id to attach your react app to.
 //the second arg of ReactDOM.render is your familiar document.getElementById(). Use the id you just
