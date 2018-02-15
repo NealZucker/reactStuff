@@ -16,7 +16,6 @@ class Barf extends Component {
     render() {
         return <div><p>Hello World!</p>
         </div>
-
     }
 }
 

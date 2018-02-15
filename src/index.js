@@ -29,9 +29,9 @@ class MyClass extends React.Component {
         return (
             <div>
                 <div>Test Test Test
-                    <Barf />
-                    <App />
-                    <Ex1 />
+                    <Barf/>
+                    <App/>
+                    <Ex1/>
                 </div>
             </div>
         );
