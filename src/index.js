@@ -6,6 +6,10 @@ import App from "./App.js"
 import Barf from "./barf/Barf.js"
 import Ex1 from "./ex1.js"
 import "./barf/Barf.css"
+import App2 from "./lifecycle.js"
+import Button from "./button.js"
+import 'bootstrap/dist/css/bootstrap.css';
+import Navbar2 from "./navbar.js"
 //Lets build yer first react component! Woo hoo!!!!!
 //At it's essence a react 'component' is simply a
 //function that has a render method that returns the following:
@@ -32,6 +36,9 @@ class MyClass extends React.Component {
                     <Barf/>
                     <App/>
                     <Ex1/>
+                    <App2/>
+                    <Button/>
+                    <Navbar2/>
                 </div>
             </div>
         );
