@@ -10,19 +10,17 @@ class WeatherComponent extends React.Component{
   constructor(){
     super();
     this.state = {
-      data:{
         main:{
           temp: "loading...",
           pressure: "Loading...",
           humidity: "Loading..."
         }
       }
-    }
   }
   componentDidMount(){
     axios.get("http://api.openweathermap.org/data/2.5/weather?q=Bozeman&appid=3d6b633422451393e953dab4052ea0e4").then((response)=>{
       this.setState({
-        data:response.data
+        main:response.main
       })
     })
   }

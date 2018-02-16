@@ -1,9 +1,9 @@
 //this exercise will be like the table you built.
 [{
-	person: "Tom Cruise"
+	person: "Tom Cruise",
 	likesTacos: "no"
 	},
-{
+]
 
 
 
