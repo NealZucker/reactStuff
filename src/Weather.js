@@ -32,7 +32,7 @@ class WeatherComponent extends React.Component{
        <Table>
         <thead>
           <tr>
-            <th>Bozeman</th>
+            <th>City</th>
             <th>Temperature</th>
             <th>Pressure</th>
             <th>Humidity</th>
@@ -40,7 +40,7 @@ class WeatherComponent extends React.Component{
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope="row">Bozeman</th>
             <td>{this.state.data.main.temp}</td>
             <td>{this.state.data.main.pressure}</td>
             <td>{this.state.data.main.humidity}</td>
