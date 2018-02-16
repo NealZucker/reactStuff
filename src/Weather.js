@@ -6,7 +6,6 @@ import { Table } from 'reactstrap';
 //url 4 l8tr  - http://api.openweathermap.org/data/2.5/weather?q=Bozeman&appid= 
 
 class WeatherComponent extends React.Component{
-  
   constructor(){
     super();
     this.state = {
