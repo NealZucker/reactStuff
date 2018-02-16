@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 //Let's use some variables IN THE TEMPLATE WOW OMG LOWL
 //in the app component below, create a constructor function (don't 
 //forget to call super() since it's a subclass) that declares a variable 
