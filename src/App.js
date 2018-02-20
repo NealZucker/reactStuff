@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Button from 'react-bootstrap/lib/Button';
 
 
 //Let's use some variables IN THE TEMPLATE WOW OMG LOWL
@@ -13,10 +10,13 @@ import Button from 'react-bootstrap/lib/Button';
 //Inject another variable into this component copying the syntax. There's not really 
 //an elegant way of doing so with HTML. This is one of the benefits of React.
 
-class App extends Component {
+export default class App extends Component {
+  constructor(){
+    super();
+    this.spaceDawgz = "Hello"
+  }
 
   render() {
-
     return (
       <div>
         {this.spaceDawgz}
@@ -24,5 +24,3 @@ class App extends Component {
     )  
   }
 }
-
-export default App;
