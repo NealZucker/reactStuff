@@ -16,51 +16,51 @@ class WeatherComponent extends React.Component{
           humidity: "Loading..."
         }
       }
-    }
+    };
   }
   componentDidMount(){
     axios.get("http://api.openweathermap.org/data/2.5/weather?q=Bozeman&appid=3d6b633422451393e953dab4052ea0e4").then((response)=>{
       this.setState({
         data:response.data
-      })
-    })
+      });
+    });
   }
   render(){
     return(
       <div>
-       <Table>
-        <thead>
-          <tr>
-            <th>City</th>
-            <th>Temperature</th>
-            <th>Pressure</th>
-            <th>Humidity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Bozeman</th>
-            <td>{this.state.data.main.temp}</td>
-            <td>{this.state.data.main.pressure}</td>
-            <td>{this.state.data.main.humidity}</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </Table>
+        <Table>
+          <thead>
+            <tr>
+              <th>City</th>
+              <th>Temperature</th>
+              <th>Pressure</th>
+              <th>Humidity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bozeman</th>
+              <td>{Math.floor(( this.state.data.main.temp - 273.15) * 9/5) + 32}</td>
+              <td>{this.state.data.main.pressure}</td>
+              <td>{this.state.data.main.humidity}</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </Table>
       </div>   
-      )
-    }
+    );
+  }
 }
 
 export default WeatherComponent;
